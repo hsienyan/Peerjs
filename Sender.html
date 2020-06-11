@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
+<html>
+    <head>
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width">
         <title>Peer-to-Peer Cue System --- Sender</title>
-        <link rel="stylesheet" href="Peer-to-Peer%20Cue%20System%20---%20Sender_files/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Peer-to-Peer Cue System --- Sender</h1>
 
         <table class="control">
-            <tbody><tr>
+            <tr>
                 <td class="title">Status:</td>
                 <td class="title">Messages:</td>
             </tr>
             <tr>
                 <td>
                     <span style="font-weight: bold">ID: </span>
-                    <input type="text" id="receiver-id" title="Input the ID from receive.html" value="gn1skgix6pd00000">
+                    <input type="text" id="receiver-id" title="Input the ID from receive.html">
                     <button id="connect-button">Connect</button>
                 </td>
                 <td>
-                    <input type="text" id="sendMessageBox" placeholder="Enter a message..." autofocus="true">
+                    <input type="text" id="sendMessageBox" placeholder="Enter a message..." autofocus="true" />
                     <button type="button" id="sendButton">Send</button>
                     <button type="button" id="clearMsgsButton">Clear Msgs (Local)</button>
                 </td>
             </tr>
             <tr>
-                <td><div id="status" class="status">Connected to: gn1skgix6pd00000</div></td>
-                <td><div class="message" id="message"><br><span class="msg-time">10:23:29</span>  -  <span class="peerMsg">Peer:</span> ffsdf<br><span class="msg-time">10:23:03</span>  -  <span class="peerMsg">Peer:</span> zczxc</div></td>
+                <td><div id="status" class="status"></div></td>
+                <td><div class="message" id="message"></div></td>
             </tr>
             <tr>
                 <td>
@@ -46,9 +46,9 @@
                     <button type="button" class="control-button" id="offButton">Off</button>
                 </td>
             </tr>
-        </tbody></table>
+        </table>
 
-        <script src="Peer-to-Peer%20Cue%20System%20---%20Sender_files/peerjs.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/peerjs@1.2.0/dist/peerjs.min.js"></script>
         <script type="text/javascript">
             (function () {
 
@@ -251,6 +251,5 @@
                 initialize();
             })();
         </script>
-    
-
-</body></html>
+    </body>
+</html>
